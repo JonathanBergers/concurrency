@@ -3,5 +3,7 @@
 .idea
 Concurrency.iml
 .idea/vcs.xml
+/.classpath
+/.project
 /.idea/vcs.xml
 # Created by .ignore support plugin (hsz.mobi)
