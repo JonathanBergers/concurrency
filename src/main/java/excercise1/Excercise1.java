@@ -5,6 +5,7 @@ import org.jfree.data.xy.XYDataItem;
 import org.jfree.data.xy.XYSeries;
 import org.jfree.data.xy.XYSeriesCollection;
 
+import java.util.ArrayList;
 import java.util.function.Function;
 
 /**
@@ -60,6 +61,20 @@ public class Excercise1 {
     }
 
 
+    /**generates an array with random numbers
+     *
+     * @param size the amount of numbers for the array
+     * @return
+     */
+    private static ArrayList<Integer> generateRandomNumberArray(final int size){
+
+        ArrayList<Integer> array = new ArrayList<Integer>();
+        for(int i = 0; i< size; i++){
+            array.add((int)(Math.random() * 100*size * Math.random()));
+        }
+        return array;
+
+    }
 
     static class Algorithms {
 
