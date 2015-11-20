@@ -1,4 +1,4 @@
-package excercise1;
+package excersises;
 
 import java.util.ArrayList;
 
@@ -19,11 +19,14 @@ public class Insertionsort {
 			sortedList.add(intToInsert);
 			return sortedList;
 		}
-		for(int i=0;i<sortedList.size();i++){
+		for(int i=0; i<sortedList.size(); i++){
+
 			if(intToInsert <= sortedList.get(i)){
 				int temp1 = sortedList.get(i);
 				sortedList.set(i, intToInsert);
-				for(int j=i+1;j<sortedList.size();j++){
+
+				for(int j=i+1; j<sortedList.size(); j++){
+
 					int temp2 = sortedList.get(j);
 					sortedList.set(j, temp1);
 					temp1 = temp2;
