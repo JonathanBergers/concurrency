@@ -4,8 +4,12 @@ import applet.MeasurementGraph;
 import org.jfree.data.xy.XYDataItem;
 import org.jfree.data.xy.XYSeries;
 import org.jfree.data.xy.XYSeriesCollection;
+import utilities.Algorithms;
+import utilities.Utilities;
 
 import java.util.ArrayList;
+import java.util.IntSummaryStatistics;
+import java.util.List;
 import java.util.function.Function;
 
 /**
@@ -30,62 +34,30 @@ public class Excercise1 {
 
 
 
-        Function<Integer, Void> algorithm1 = new Function<Integer, Void>() {
-            public Void apply(Integer integer) {
-
-                //TODO voer insertionsort uit.
-
+        Function<ArrayList<Integer>, Void> insertionSort = new Function<ArrayList<Integer>, Void>() {
+            public Void apply(ArrayList<Integer> list) {
+                Algorithms.insertionSort(list);
                 return null;
-
             }
         };
 
-        series.add(measureAlgorithm(25000,algorithm1));
-        series.add(measureAlgorithm(50000,algorithm1));
-        series.add(measureAlgorithm(100000,algorithm1));
-        series.add(measureAlgorithm(200000,algorithm1));
-        series.add(measureAlgorithm(400000,algorithm1));
-        series.add(measureAlgorithm(800000,algorithm1));
+        series.add(Algorithms.measureAlgorithm(Utilities.generateRandomNumberArray(25000), insertionSort, 25000));
+        series.add(Algorithms.measureAlgorithm(Utilities.generateRandomNumberArray(50000), insertionSort, 50000));
+        series.add(Algorithms.measureAlgorithm(Utilities.generateRandomNumberArray(100000), insertionSort, 100000));
+        series.add(Algorithms.measureAlgorithm(Utilities.generateRandomNumberArray(200000), insertionSort, 200000));
+        series.add(Algorithms.measureAlgorithm(Utilities.generateRandomNumberArray(400000), insertionSort, 400000));
+        series.add(Algorithms.measureAlgorithm(Utilities.generateRandomNumberArray(800000), insertionSort, 800000));
         dataset.addSeries(series);
 
-        new MeasurementGraph("opdracht 1", "T", "N", dataset).render();
+        new MeasurementGraph("opdracht 1.1", "N", "T", dataset).render();
 
     }
 
-    private static XYDataItem measureAlgorithm(int n, Function<Integer, Void> algorithmCall){
-
-        long startTime = System.currentTimeMillis();
-        algorithmCall.apply(n);
-        long endTime = System.currentTimeMillis();
-        return new XYDataItem(endTime-startTime, n);
-    }
 
 
-    /**generates an array with random numbers
-     *
-     * @param size the amount of numbers for the array
-     * @return
-     */
-    private static ArrayList<Integer> generateRandomNumberArray(final int size){
-
-        ArrayList<Integer> array = new ArrayList<Integer>();
-        for(int i = 0; i< size; i++){
-            array.add((int)(Math.random() * 100*size * Math.random()));
-        }
-        return array;
-
-    }
-
-    static class Algorithms {
 
 
-        static void insertionSort(final ArrayList<Integer> list){
 
-
-        }
-
-
-    }
 
 
 

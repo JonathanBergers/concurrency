@@ -13,7 +13,15 @@ public class Insertionsort {
 		}
 		return sortedList;
 	}
-	
+
+
+	/**inserts the item into the list and sorts it with insertionsort
+	 *
+	 *
+	 * @param sortedList
+	 * @param intToInsert
+	 * @return
+	 */
 	public static ArrayList<Integer> insertIntIntoList(ArrayList<Integer> sortedList, int intToInsert){
 		if(sortedList.size()==0){
 			sortedList.add(intToInsert);
@@ -36,21 +44,7 @@ public class Insertionsort {
 		}
 		return sortedList;
 	}
-	
-	
-	public static int randInt(int i, int j) {
-		return (int) (Math.random() * (j - i)) + i;
-	}
 
-
-	public static ArrayList<Integer> fillList(int size){
-		ArrayList<Integer> list = new ArrayList<Integer>();
-		for(int i=0;i<size;i++){
-			list.add(randInt(0, size));
-		}
-		return list;
-	}
-	
 	
 	public boolean isListSorted(ArrayList<Integer> soCalledSortedList){
 		for(int i=1;i<soCalledSortedList.size();i++){
