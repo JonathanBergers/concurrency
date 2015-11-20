@@ -6,7 +6,7 @@ import org.jfree.data.xy.XYSeriesCollection;
 /**
  * Created by jonathan on 20-11-15.
  */
-public class Excercise2 {
+public class Excercise1_2 {
 
 
     protected volatile XYSeriesCollection dataset = new XYSeriesCollection();
@@ -15,7 +15,7 @@ public class Excercise2 {
 
 
 
-    private void excercise1(){
+    private void excercise1_2(){
 
 
 

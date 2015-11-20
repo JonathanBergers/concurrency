@@ -18,7 +18,7 @@ import java.util.function.Function;
  *
  *
  */
-public class Excercise1 {
+public class Excercise1_1 {
 
 
     public static void main(String[] args) {
