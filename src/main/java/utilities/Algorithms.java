@@ -1,4 +1,4 @@
-package algorithms;
+package utilities;
 
 import org.jfree.data.xy.XYDataItem;
 

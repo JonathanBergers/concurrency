@@ -15,6 +15,13 @@ public class Excercise2 {
 
 
 
+    private void excercise1(){
+
+
+
+
+
+    }
 
 
 

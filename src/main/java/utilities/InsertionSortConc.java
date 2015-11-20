@@ -1,6 +1,4 @@
-package algorithms;
-
-import org.apache.commons.lang3.ArrayUtils;
+package utilities;
 
 import java.util.ArrayList;
 
