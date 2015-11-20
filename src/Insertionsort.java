@@ -1,17 +1,12 @@
+
+
 import java.util.ArrayList;
 
 
 public class Insertionsort {
 
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		
-
-	}
 	
-	private static ArrayList<Integer> sortList(ArrayList<Integer> unsortedList){
+	public static ArrayList<Integer> sortList(ArrayList<Integer> unsortedList){
 		ArrayList<Integer> sortedList = new ArrayList<Integer>();
 		for(int i : unsortedList){
 			insertIntIntoList(sortedList, i);
@@ -19,7 +14,7 @@ public class Insertionsort {
 		return sortedList;
 	}
 	
-	private static ArrayList<Integer> insertIntIntoList(ArrayList<Integer> sortedList, int intToInsert){
+	public static ArrayList<Integer> insertIntIntoList(ArrayList<Integer> sortedList, int intToInsert){
 		if(sortedList.size()==0){
 			sortedList.add(intToInsert);
 			return sortedList;
@@ -40,10 +35,12 @@ public class Insertionsort {
 	}
 	
 	
-	private static int randInt(int i, int j) {
+	public static int randInt(int i, int j) {
 		return (int) (Math.random() * (j - i)) + i;
 	}
-	private static ArrayList<Integer> fillList(int size){
+
+
+	public static ArrayList<Integer> fillList(int size){
 		ArrayList<Integer> list = new ArrayList<Integer>();
 		for(int i=0;i<size;i++){
 			list.add(randInt(0, size));
@@ -52,7 +49,7 @@ public class Insertionsort {
 	}
 	
 	
-	private boolean isListSorted(ArrayList<Integer> soCalledSortedList){
+	public boolean isListSorted(ArrayList<Integer> soCalledSortedList){
 		for(int i=1;i<soCalledSortedList.size();i++){
 			if(soCalledSortedList.get(i)<soCalledSortedList.get(i-1)){
 				return false;
