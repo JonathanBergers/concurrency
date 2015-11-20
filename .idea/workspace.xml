@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="450dc58b-d894-4758-930e-f3dd90e95b59" name="Default" comment="">
+    <list default="true" id="450dc58b-d894-4758-930e-f3dd90e95b59" name="Default" comment="random number">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/algorithms/Algorithms.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/excersises/Excercise2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/algorithms/InsertionSortConc.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/excercise1/Excercise1.java" afterPath="$PROJECT_DIR$/src/main/java/excersises/Excercise1.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/excercise1/Insertionsort.java" afterPath="$PROJECT_DIR$/src/main/java/excersises/Insertionsort.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Concurrency.iml" afterPath="$PROJECT_DIR$/Concurrency.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/excercise1/Excercise1.java" afterPath="$PROJECT_DIR$/src/main/java/excercise1/Excercise1.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Concurrency.iws" />
@@ -32,27 +37,27 @@
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+              <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Insertionsort.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/excercise1/Insertionsort.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/excersises/Insertionsort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.586207">
-              <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+            <state vertical-scroll-proportion="-4.965517">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Excercise1.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/excercise1/Excercise1.java">
+      <file leaf-file-name="Excercise1.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/excersises/Excercise1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6903226">
-              <caret line="76" column="5" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="26" column="2" selection-start-line="26" selection-start-column="2" selection-end-line="28" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#360#361#0" expanded="true" />
@@ -60,6 +65,46 @@
                 <element signature="e#593#776#0" expanded="true" />
                 <element signature="e#775#776#0" expanded="true" />
                 <element signature="e#1788#1797#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Algorithms.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/algorithms/Algorithms.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Excercise2.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/excersises/Excercise2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InsertionSortConc.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/algorithms/InsertionSortConc.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5225806">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#293#294#0" expanded="true" />
+                <element signature="e#331#332#0" expanded="true" />
+                <element signature="e#370#371#0" expanded="true" />
+                <element signature="e#397#398#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -87,8 +132,20 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -102,8 +159,11 @@
         <option value="$PROJECT_DIR$/src/main/java/opdracht1/Insertionsort.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/applet/MeasurementGraph.java" />
-        <option value="$PROJECT_DIR$/src/main/java/excercise1/Insertionsort.java" />
         <option value="$PROJECT_DIR$/src/main/java/excercise1/Excercise1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/excercise1/Insertionsort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/excersises/Excercise2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/algorithms/Algorithms.java" />
+        <option value="$PROJECT_DIR$/src/main/java/algorithms/InsertionSortConc.java" />
       </list>
     </option>
   </component>
@@ -236,7 +296,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="excercise1" />
+              <option name="myItemId" value="excersises" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -266,6 +326,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Concurrency" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Concurrency" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algorithms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -278,6 +364,8 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="OverrideImplement.overriding.sorted" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -787,7 +875,7 @@
       <created>1448010422937</created>
       <option name="number" value="Default" />
       <updated>1448010422937</updated>
-      <workItem from="1448010426554" duration="1020000" />
+      <workItem from="1448010426554" duration="2055000" />
     </task>
     <task id="LOCAL-00001" summary="git ignore">
       <created>1448010604344</created>
@@ -813,11 +901,17 @@
       <option name="project" value="LOCAL" />
       <updated>1448011119669</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="random number generator">
+      <created>1448011456627</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1448011456627</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1020000" />
+    <option name="totallyTimeSpent" value="2055000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="59" y="-4" width="1861" height="1084" extended-state="6" />
@@ -857,7 +951,8 @@
     <MESSAGE value="git ignore" />
     <MESSAGE value="git igon" />
     <MESSAGE value="ex1" />
-    <option name="LAST_COMMIT_MESSAGE" value="ex1" />
+    <MESSAGE value="random number generator" />
+    <option name="LAST_COMMIT_MESSAGE" value="random number generator" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -867,7 +962,7 @@
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -888,18 +983,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/excercise1/Insertionsort.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/excersises/Insertionsort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.586207">
-          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+        <state vertical-scroll-proportion="-4.965517">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/excercise1/Excercise1.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/excersises/Excercise1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6903226">
-          <caret line="76" column="5" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="2" selection-start-line="26" selection-start-column="2" selection-end-line="28" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#360#361#0" expanded="true" />
@@ -907,6 +1002,40 @@
             <element signature="e#593#776#0" expanded="true" />
             <element signature="e#775#776#0" expanded="true" />
             <element signature="e#1788#1797#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/excersises/Excercise2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithms/Algorithms.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithms/InsertionSortConc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5225806">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#293#294#0" expanded="true" />
+            <element signature="e#331#332#0" expanded="true" />
+            <element signature="e#370#371#0" expanded="true" />
+            <element signature="e#397#398#0" expanded="true" />
           </folding>
         </state>
       </provider>

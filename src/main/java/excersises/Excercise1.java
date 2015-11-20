@@ -1,4 +1,4 @@
-package excercise1;
+package excersises;
 
 import applet.MeasurementGraph;
 import org.jfree.data.xy.XYDataItem;
@@ -77,6 +77,12 @@ public class Excercise1 {
     }
 
     static class Algorithms {
+
+
+        static void insertionSort(final ArrayList<Integer> list){
+
+
+        }
 
 
     }
