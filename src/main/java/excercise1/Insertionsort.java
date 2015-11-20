@@ -1,4 +1,4 @@
-package opdracht1;
+package excercise1;
 
 import java.util.ArrayList;
 
@@ -45,6 +45,8 @@ public class Insertionsort {
 	private static int randInt(int i, int j) {
 		return (int) (Math.random() * (j - i)) + i;
 	}
+
+
 	private static ArrayList<Integer> fillList(int size){
 		ArrayList<Integer> list = new ArrayList<Integer>();
 		for(int i=0;i<size;i++){
