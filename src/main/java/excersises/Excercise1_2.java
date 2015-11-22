@@ -1,10 +1,17 @@
 package excersises;
 
+import applet.MeasurementGraph;
+import com.sun.istack.internal.Nullable;
+import org.jfree.data.xy.XYDataItem;
 import org.jfree.data.xy.XYSeries;
 import org.jfree.data.xy.XYSeriesCollection;
+import utilities.Algorithms;
+import utilities.InsertionsortThread;
+import utilities.Measurement;
 import utilities.Utilities;
 
 import java.util.ArrayList;
+import java.util.function.Function;
 
 /**
  * Created by jonathan on 20-11-15.
@@ -20,40 +27,73 @@ public class Excercise1_2 {
 
     public static void main(String[] args) {
 
-        excercise1_2();
+        excercise1_2(5);
 
     }
 
 
-    private static void excercise1_2(){
+    private static void excercise1_2(int times){
 
+        XYSeriesCollection dataset = new XYSeriesCollection();
+        for(int i = 0; i < times; i++){
+            dataset.addSeries(measureEx1_2("meting" + i));
 
-        //the size of the arrayList can be changed here
-        int size = 10000;
-
-
-
-
-        InsertionSortConc insertionSortConc1 = new InsertionSortConc(Utilities.generateRandomNumberArray(size/2));
-        InsertionSortConc insertionSortConc2 = new InsertionSortConc(Utilities.generateRandomNumberArray(size/2));
-        insertionSortConc1.start(); insertionSortConc2.start();
-
-
-
-
-    }
-
-    /**
-     *
-     * @param numbers the sorted arrayList from the thread that is finished.
-     */
-    protected static void afterThread(ArrayList<Integer> numbers){
-        if(temp == null){
-            temp = numbers;
-        } else {
-            mergeArrayLists(temp, numbers);
         }
+
+        new MeasurementGraph("opdracht 1.2", "N(numbers)", "T(ms)", dataset).render();
     }
+
+
+    private static XYSeries measureEx1_2(final String label){
+        XYSeries series = new XYSeries(label);
+
+
+        series.add(measureInsertionSortCon(25000));
+        series.add(measureInsertionSortCon(50000));
+        series.add(measureInsertionSortCon(100000));
+        series.add(measureInsertionSortCon(200000));
+        series.add(measureInsertionSortCon(400000));
+        series.add(measureInsertionSortCon(800000));
+        series.add(measureInsertionSortCon(1000000));
+
+
+        return series;
+
+    }
+
+
+    /**Measures the insertion sort on two threads
+     *
+     * @param amount amount of items, also the x
+     * @return
+     */
+    private static XYDataItem measureInsertionSortCon(int amount){
+
+        final ArrayList<Integer> leftHalf = Utilities.generateRandomNumberArray(amount/2);
+        final ArrayList<Integer> rightHalf = Utilities.generateRandomNumberArray(amount/2);
+
+
+
+        InsertionsortThread sortLeftThread = new InsertionsortThread(leftHalf);
+        InsertionsortThread sortRightThread = new InsertionsortThread(rightHalf);
+
+
+        Measurement<Integer> measurement = input -> {
+            sortLeftThread.start();
+            sortRightThread.start();
+            while (sortLeftThread.isAlive() && sortRightThread.isAlive()) {
+
+                // working on algorithm
+            }
+            mergeArrayLists(sortLeftThread.getSortedList(), sortRightThread.getSortedList());
+        };
+
+        return measurement.measure(amount);
+
+    }
+
+
+
     private static ArrayList<Integer> mergeArrayLists(ArrayList<Integer> numbers1, ArrayList<Integer> numbers2){
         ArrayList<Integer> merged = new ArrayList<Integer>();
         while(!numbers1.isEmpty() && !numbers2.isEmpty()){
@@ -72,35 +112,14 @@ public class Excercise1_2 {
             }
         }
 
-        //check if the list is sorted
-        System.out.println(insertionsort.isListSorted(merged));
+//        //check if the list is sorted
+//        System.out.println(insertionsort.isListSorted(merged));
         return merged;
 
     }
 
 
-    static class InsertionSortConc extends Thread {
 
-
-        private final ArrayList<Integer> numbers;
-        private final Insertionsort insertionsort;
-
-        public InsertionSortConc(ArrayList<Integer> numbers) {
-            this.numbers = numbers;
-            insertionsort = new Insertionsort();
-        }
-
-        @Override
-        public void run() {
-             afterThread(insertionsort.sortList(numbers));
-
-        }
-
-
-
-
-
-    }
 
 
 
