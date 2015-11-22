@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class Insertionsort {
 
 	
-	public static ArrayList<Integer> sortList(ArrayList<Integer> unsortedList){
+	public ArrayList<Integer> sortList(ArrayList<Integer> unsortedList){
 		ArrayList<Integer> sortedList = new ArrayList<Integer>();
 		for(int i : unsortedList){
 			insertIntIntoList(sortedList, i);
