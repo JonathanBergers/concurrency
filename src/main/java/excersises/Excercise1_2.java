@@ -18,11 +18,6 @@ import java.util.function.Function;
  */
 public class Excercise1_2 {
 
-    private static Insertionsort insertionsort = new Insertionsort();
-    private static ArrayList<Integer> temp = null;
-
-
-    protected volatile XYSeriesCollection dataset = new XYSeriesCollection();
 
 
     public static void main(String[] args) {
@@ -82,7 +77,7 @@ public class Excercise1_2 {
         Measurement<Integer> measurement = input -> {
             sortLeftThread.start();
             sortRightThread.start();
-            // wiat for threads .... is this busy waitng ?
+            // wiat for threads .... 
             try {
                 sortLeftThread.join();
                 sortRightThread.join();
