@@ -81,9 +81,11 @@ public class Excercise1_2 {
         Measurement<Integer> measurement = input -> {
             sortLeftThread.start();
             sortRightThread.start();
-            while (sortLeftThread.isAlive() && sortRightThread.isAlive()) {
-
-                // working on algorithm
+            try {
+                sortLeftThread.join();
+                sortRightThread.join();
+            } catch( Exception e) {
+                System.out.println("Interrupted");
             }
             mergeArrayLists(sortLeftThread.getSortedList(), sortRightThread.getSortedList());
         };
