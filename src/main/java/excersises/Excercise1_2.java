@@ -18,16 +18,11 @@ import java.util.function.Function;
  */
 public class Excercise1_2 {
 
-    private static Insertionsort insertionsort = new Insertionsort();
-    private static ArrayList<Integer> temp = null;
-
-
-    protected volatile XYSeriesCollection dataset = new XYSeriesCollection();
 
 
     public static void main(String[] args) {
 
-        excercise1_2(5);
+        excercise1_2(1);
 
     }
 
@@ -54,9 +49,10 @@ public class Excercise1_2 {
         series.add(measureInsertionSortCon(200000));
         series.add(measureInsertionSortCon(400000));
         series.add(measureInsertionSortCon(800000));
-        series.add(measureInsertionSortCon(1000000));
+        //series.add(measureInsertionSortCon(1000000));
 
 
+        System.out.println("measurement for " + label + "is done");
         return series;
 
     }
@@ -81,10 +77,15 @@ public class Excercise1_2 {
         Measurement<Integer> measurement = input -> {
             sortLeftThread.start();
             sortRightThread.start();
-            while (sortLeftThread.isAlive() && sortRightThread.isAlive()) {
-
-                // working on algorithm
+            // wiat for threads .... 
+            try {
+                sortLeftThread.join();
+                sortRightThread.join();
+            } catch( Exception e) {
+                System.out.println("Interrupted");
             }
+
+            System.out.println("threads sorted the array, now merging");
             mergeArrayLists(sortLeftThread.getSortedList(), sortRightThread.getSortedList());
         };
 
