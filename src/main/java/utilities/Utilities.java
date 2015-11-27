@@ -25,7 +25,7 @@ public class Utilities {
 
 
 
-    public boolean isListSorted(ArrayList<Integer> soCalledSortedList){
+    public static boolean isListSorted(ArrayList<Integer> soCalledSortedList){
         for(int i=1;i<soCalledSortedList.size();i++){
             if(soCalledSortedList.get(i)<soCalledSortedList.get(i-1)){
                 return false;

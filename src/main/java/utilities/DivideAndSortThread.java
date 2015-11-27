@@ -23,13 +23,29 @@ public class DivideAndSortThread extends Thread {
             leftList.addAll(list.subList(0, list.size() / 2));
             rightList.addAll(list.subList(list.size()/2+1,list.size()));
 
-            DivideAndSortThread
+            DivideAndSortThread sortLeftList = new DivideAndSortThread(maxListSize, leftList);
+            DivideAndSortThread sortrightList = new DivideAndSortThread(maxListSize, rightList);
+
+
+            try {
+                sortLeftList.start();
+                sortLeftList.join();
+                sortrightList.start();
+                sortrightList.join();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+            list = Algorithms.mergeArrayLists(sortLeftList.getList(), sortrightList.getList());
+            //System.out.println(Utilities.isListSorted(list));
 
         } else {
             list = Algorithms.insertionSort(list);
+            //System.out.println(Utilities.isListSorted(list));
         }
     }
     public ArrayList<Integer> getList(){
+        //System.out.println(Utilities.isListSorted(list));
         return list;
     }
 

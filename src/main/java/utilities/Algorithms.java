@@ -35,7 +35,7 @@ public class Algorithms {
             insertAndSort(sortedList, i);
         }
 
-        return items;
+        return sortedList;
 
     }
 
@@ -68,7 +68,31 @@ public class Algorithms {
                 break;
             }
         }
+        //System.out.println(Utilities.isListSorted(sortedList));
         return sortedList;
+    }
+
+    public static ArrayList<Integer> mergeArrayLists(ArrayList<Integer> leftList, ArrayList<Integer> rightList){
+        ArrayList<Integer> merged = new ArrayList<>();
+        while(!leftList.isEmpty() && !rightList.isEmpty()){
+            if(leftList.get(0) < rightList.get(0)){
+                merged.add(leftList.remove(0));
+                if(leftList.isEmpty()){
+                    //merged.addAll(rightList);
+                    rightList = leftList;
+                }
+            } else {
+                merged.add(rightList.remove(0));
+                if(rightList.isEmpty()){
+                    //merged.addAll(leftList);
+                    leftList = rightList;
+                }
+            }
+        }
+
+        //System.out.println(Utilities.isListSorted(merged));
+        return merged;
+
     }
 
 

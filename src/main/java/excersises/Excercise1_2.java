@@ -86,7 +86,7 @@ public class Excercise1_2 {
             }
 
             System.out.println("threads sorted the array, now merging");
-            mergeArrayLists(sortLeftThread.getSortedList(), sortRightThread.getSortedList());
+            Algorithms.mergeArrayLists(sortLeftThread.getSortedList(), sortRightThread.getSortedList());
         };
 
         return measurement.measure(amount);
@@ -95,29 +95,7 @@ public class Excercise1_2 {
 
 
 
-    private static ArrayList<Integer> mergeArrayLists(ArrayList<Integer> numbers1, ArrayList<Integer> numbers2){
-        ArrayList<Integer> merged = new ArrayList<Integer>();
-        while(!numbers1.isEmpty() && !numbers2.isEmpty()){
-            if(numbers1.get(0) < numbers2.get(0)){
-                merged.add(numbers1.remove(0));
-                if(numbers1.isEmpty()){
-                    merged.addAll(numbers2);
-                    numbers2 = numbers1;
-                }
-            } else {
-                merged.add(numbers2.remove(0));
-                if(numbers2.isEmpty()){
-                    merged.addAll(numbers1);
-                    numbers1 = numbers2;
-                }
-            }
-        }
 
-//        //check if the list is sorted
-//        System.out.println(insertionsort.isListSorted(merged));
-        return merged;
-
-    }
 
 
 
