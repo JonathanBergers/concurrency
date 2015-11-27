@@ -40,16 +40,20 @@ public class Excercise1_1 {
                 return null;
             }
         };
+        long beginTime = System.nanoTime();
+        Algorithms.insertionSort(Utilities.generateRandomNumberArray(10000));
+        long endTime = System.nanoTime();
+        System.out.println((endTime - beginTime)/1000);
 
-        series.add(Algorithms.measureAlgorithm(Utilities.generateRandomNumberArray(25000), insertionSort, 25000));
-        series.add(Algorithms.measureAlgorithm(Utilities.generateRandomNumberArray(50000), insertionSort, 50000));
-        series.add(Algorithms.measureAlgorithm(Utilities.generateRandomNumberArray(100000), insertionSort, 100000));
-        series.add(Algorithms.measureAlgorithm(Utilities.generateRandomNumberArray(200000), insertionSort, 200000));
-        series.add(Algorithms.measureAlgorithm(Utilities.generateRandomNumberArray(400000), insertionSort, 400000));
-        series.add(Algorithms.measureAlgorithm(Utilities.generateRandomNumberArray(800000), insertionSort, 800000));
-        dataset.addSeries(series);
-
-        new MeasurementGraph("opdracht 1.1", "N", "T", dataset).render();
+//        series.add(Algorithms.measureAlgorithm(Utilities.generateRandomNumberArray(25000), insertionSort, 25000));
+//        series.add(Algorithms.measureAlgorithm(Utilities.generateRandomNumberArray(50000), insertionSort, 50000));
+//        series.add(Algorithms.measureAlgorithm(Utilities.generateRandomNumberArray(100000), insertionSort, 100000));
+//        series.add(Algorithms.measureAlgorithm(Utilities.generateRandomNumberArray(200000), insertionSort, 200000));
+//        series.add(Algorithms.measureAlgorithm(Utilities.generateRandomNumberArray(400000), insertionSort, 400000));
+//        series.add(Algorithms.measureAlgorithm(Utilities.generateRandomNumberArray(800000), insertionSort, 800000));
+//        dataset.addSeries(series);
+//
+//        new MeasurementGraph("opdracht 1.1", "N", "T", dataset).render();
 
     }
 

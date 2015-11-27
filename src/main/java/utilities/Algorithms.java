@@ -30,9 +30,9 @@ public class Algorithms {
     public static ArrayList<Integer> insertionSort(final ArrayList<Integer> items){
 
 
-        final ArrayList<Integer> sortedList = new ArrayList<Integer>();
+        ArrayList<Integer> sortedList = new ArrayList<Integer>();
         for(int i : items){
-            insertAndSort(sortedList, i);
+            sortedList = insertAndSort(sortedList, i);
         }
 
         return sortedList;
@@ -65,6 +65,7 @@ public class Algorithms {
                     sortedList.set(j, temp1);
                     temp1 = temp2;
                 }
+                sortedList.add(temp1);
                 break;
             }
         }

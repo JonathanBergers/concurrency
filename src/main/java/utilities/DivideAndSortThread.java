@@ -21,7 +21,7 @@ public class DivideAndSortThread extends Thread {
             ArrayList<Integer> leftList = new ArrayList<>();
             ArrayList<Integer> rightList = new ArrayList<>();
             leftList.addAll(list.subList(0, list.size() / 2));
-            rightList.addAll(list.subList(list.size()/2+1,list.size()));
+            rightList.addAll(list.subList((list.size()/2)+1,list.size()));
 
             DivideAndSortThread sortLeftList = new DivideAndSortThread(maxListSize, leftList);
             DivideAndSortThread sortrightList = new DivideAndSortThread(maxListSize, rightList);
