@@ -10,6 +10,8 @@ import javax.swing.*;
 
 /**
  * Created by jonathan on 18-11-15.
+ *
+ * Met deze klasse kun je een grafiek plotten.
  */
 public class MeasurementGraph extends JFrame{
 
@@ -39,12 +41,6 @@ public class MeasurementGraph extends JFrame{
 
 
 
-    public void addXYSeries(XYSeries series){
-
-
-        dataset.addSeries(series);
-    }
-
     public MeasurementGraph(String title, String xLabel, String yLabel, XYSeriesCollection dataset) {
         this.title = title;
         this.xLabel = xLabel;
@@ -66,13 +62,4 @@ public class MeasurementGraph extends JFrame{
 
 
 
-    private XYDataset generateRandomDataset(){
-
-
-        final XYSeries series1 = new XYSeries("First");
-        series1.add(1.0, 1.0);
-        series1.add(2.0, 4.0);
-
-        return new XYSeriesCollection(series1);
-    }
 }
