@@ -9,16 +9,19 @@ import org.jfree.data.xy.XYDataItem;
 public interface Measurement<T> {
 
 
-    default  XYDataItem measure(final int xPosition, @Nullable T... input){
+    default  XYDataItem measure(final int xPosition, @Nullable T input){
 
         long startTime = System.currentTimeMillis();
         doSomeWork(input);
         long endTime = System.currentTimeMillis();
+        System.out.println("Measurement done, X: " + xPosition + " , Y: " + (endTime-startTime));
         return new XYDataItem(xPosition, endTime-startTime);
+
+
 
     }
 
-    void doSomeWork(@Nullable T... input);
+    void doSomeWork(@Nullable T input);
 
 
 }
