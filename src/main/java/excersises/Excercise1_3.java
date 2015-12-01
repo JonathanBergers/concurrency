@@ -28,7 +28,7 @@ public class Excercise1_3 {
         }
 
 
-        int drempelwaarde = 1000;
+        int drempelwaarde = 1600;
         XYSeriesCollection dataset0 = new XYSeriesCollection();
         for(int i = 0; i < times; i++){
             dataset0.addSeries(measureEx1_3("meting" + i, drempelwaarde));
