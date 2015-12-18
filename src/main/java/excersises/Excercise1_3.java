@@ -22,7 +22,7 @@ public class Excercise1_3 {
 
     private static void excercise1_3(int times){
 
-        //because java
+        // compiler optimalisation
         for(int i = 0; i<5; i++){
             measureEx1_3(" geen meting" + i, 1000);
         }
@@ -87,7 +87,7 @@ public class Excercise1_3 {
 
         };
 
-        return measurement.measure(amount);
+        return measurement.measure(amount, amount);
 
     }
 

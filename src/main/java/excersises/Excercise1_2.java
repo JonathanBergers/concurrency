@@ -22,7 +22,12 @@ public class Excercise1_2 {
 
     public static void main(String[] args) {
 
-        excercise1_2(1);
+        //java compiler
+        measureInsertionSortCon(2500);
+        measureInsertionSortCon(2500);
+        measureInsertionSortCon(2500);
+
+        excercise1_2(3);
 
     }
 
@@ -89,7 +94,7 @@ public class Excercise1_2 {
             Algorithms.mergeArrayLists(sortLeftThread.getSortedList(), sortRightThread.getSortedList());
         };
 
-        return measurement.measure(amount);
+        return measurement.measure(amount, amount);
 
     }
 

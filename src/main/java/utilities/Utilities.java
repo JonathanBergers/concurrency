@@ -19,6 +19,8 @@ public class Utilities {
         for(int i = 0; i< size; i++){
             array.add((int)(Math.random() * 100*size * Math.random()));
         }
+
+
         return array;
 
     }
